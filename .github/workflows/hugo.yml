@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - master
+    - master
 
 permissions:
   contents: read
@@ -45,7 +45,7 @@ jobs:
       - name: Install Tailwind CSS
         run: |
           npm install tailwindcss@4.1.18
-
+          npx tailwindcss --version
       # ===============================
       # Hugo Build
       # ===============================
