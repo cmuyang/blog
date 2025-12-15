@@ -42,9 +42,9 @@ jobs:
       # ===============================
       # 新增：Install Tailwind CSS v4.1.18
       # ===============================
-      - name: Install Tailwind CSS
+      - name: Install Tailwind CSS CLI
         run: |
-          npm install tailwindcss@4.1.18
+          npm install --no-save @tailwindcss/cli@4.1.18
           npx tailwindcss --version
       # ===============================
       # Hugo Build
